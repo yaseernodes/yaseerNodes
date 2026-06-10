@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yasir's Website</title>
+
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            font-family: Arial;
+            padding-top: 50px;
+        }
+
+        .card {
+            background-color: #222;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #4f46e5;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Yasir</h1>
+        <p>Web3 Developer in Training</p>
+
+        <p id="status">Wallet Not Connected ❌</p>
+        <p id="balance">Balance: 0 YSN</p>
+
+        <button onclick="connectWallet()">
+            Connect Wallet
+        </button>
+    </div>
+
+    <script>
+        function connectWallet() {
+            document.getElementById("status").innerHTML =
+                "Wallet Connected ✅";
+
+            document.getElementById("status").style.color =
+                "lightgreen";
+
+            document.getElementById("balance").innerHTML =
+                "Balance: 100 YSN";
+        }
+    </script>
+</body>
+</html>
